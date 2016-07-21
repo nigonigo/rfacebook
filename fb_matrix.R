@@ -22,5 +22,3 @@ fb.matrix <- function(x){
     return(mat)
 }
 
-test <- fb.matrix(dat)
-
