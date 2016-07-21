@@ -1,15 +1,18 @@
 ---
 title: "Working with Facebook Graph API and R"
-author: "Ben McCary"
-date: "06 July, 2016"
+author: "Ben McCary"  
+date: '`r format(Sys.time(), "%B %d, %Y")`'
 output: 
-    html_document:
-keep_md: yes
+  html_document:
+    keep_md: yes
 ---
     
 # Using the Facebook Graph API in R Tool  
 
-Note, key is expired in committed version. 
+Note, key is expired in committed version. Use the following technique to get token/user ignored by git filter:
+
+http://stackoverflow.com/questions/16244969/how-to-tell-git-to-ignore-individual-lines-i-e-gitignore-for-specific-lines-of
+
 ```{r promts}
 #navigates to website
 browseURL('https://developers.facebook.com/tools/explorer/')
@@ -37,7 +40,8 @@ user <- "washingtoncathedral"
 dat <- fb.api(user, token, params)
 test <- fb.matrix(dat)
 ```
-## Doing some analysis
+## Doing some analysis  
+figure out how to make the x-axis all fit. Maybe skip ever other day or something.
 
 ```{r plots, fig.width=10}
 # reorganize matrix to be usable by ggplot
