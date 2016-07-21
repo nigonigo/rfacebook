@@ -22,8 +22,3 @@ fb.matrix <- function(x){
     return(mat)
 }
 
-<<<<<<< HEAD
-=======
-test <- fb.matrix(dat)
-
->>>>>>> master
