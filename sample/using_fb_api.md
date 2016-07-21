@@ -45,7 +45,7 @@ source("../fb_matrix.R")
 
 ```r
 token <- "EAACEdEose0cBAHZBqNuTk5XJgCMj4cPBR48sawrLmME1cOjgCLyo71IZCaV1hZB7Q9oVvq8JmkhkkBg13ZBuOAmBGyTnQ1v1quA5ypfYlrcFu6Uyh5vNuwUQKiZC9Dc9GcZAsregezfT9JVbDeUF5Kalpskr1EqWQe14fP03ovZAAZDZD"
-user <- "washingtoncathedral"
+user <- "662428190454349"
 dat <- fb.api(user, token, params)
 ```
 
