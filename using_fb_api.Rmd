@@ -1,0 +1,15 @@
+---
+    title: "Working with Facebook Graph API and R"
+author: "Ben McCary"
+date: "06 July, 2016"
+output: 
+    html_document:
+    css: ../css/style.css
+keep_md: yes
+---
+    
+# Using the Facebook Graph API in R Tool  
+
+```{r sourcing}
+source("fb_api.R")
+```
