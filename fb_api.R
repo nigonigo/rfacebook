@@ -1,6 +1,6 @@
 # access graph api to get json data
 fb.api.data <- function(user, token, params) {
-    require(rjson) # Load Library
+    params = params(params)
     # Create Connection URL
     paramStr <- paste(params, "", sep = "&", collapse = "")
     connectStr <- paste('https://graph.facebook.com/v2.6/', 
@@ -8,7 +8,7 @@ fb.api.data <- function(user, token, params) {
                         token, sep = "")
     api_con <- URLencode(connectStr)
     rd <- readLines(api_con, warn = F)
-    dat <- fromJSON(rd)
+    dat <- rjson::fromJSON(rd)
     return(dat$data[[1]]$values)
-
+    
 }
