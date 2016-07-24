@@ -19,16 +19,3 @@ params <- function(pars = list()){
 
 
 
-
-
-# SIMPLE VERSION
-params <- function(items, values){
-    p <- NULL
-    for(i in 1:length(items)){
-        p[i] = paste(items[i], values[i], sep = "=")
-    }
-    return(p)
-}
-
-
-
