@@ -23,6 +23,6 @@ fb.data <- function(params, req_auth = FALSE, store_auth = FALSE) {
     if (length(dat$data) < 1){
         message("Query returned no results. Try adjusting your time period. ") 
     } else {
-        return(dat$data[[1]]$values)    
+        return(dat)    
     }
 }
